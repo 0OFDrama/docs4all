@@ -1,3 +1,48 @@
 site_name: AboveWiki
+
+nav:
+    - sep: https://0ofdrama.github.io/docs4all/
+    - Home: index.md
+#    - About: about.md
+    - CS:
+        - Github/Git:
+            - Git: CS/github_git/git.md
+            - Github: CS/github_git/github.md
+        - 机器学习: 
+            - 监督学习: 
+                - 线性模型: CS\machine_learning\supervised_learning\linear_models.md
+
 theme:
     name: 'material'
+    features:
+        - navigation.tabs
+        - navigation.tabs.sticky
+        - navigation.instant
+        - navigation.expand
+        - navigation.top
+    palette: 
+
+    # Palette toggle for light mode
+        - scheme: default
+          primary: deep purple
+          accent: orange
+          toggle:
+            icon: material/brightness-7 
+            name: Switch to dark mode
+
+    # Palette toggle for dark mode
+        - scheme: slate
+          primary: deep purple
+          accent: teal
+          toggle:
+            icon: material/brightness-4
+            name: Switch to light mode
+
+
+markdown_extensions:
+    - pymdownx.arithmatex:
+        generic: true
+
+extra_javascript:
+    - javascripts/mathjax.js
+    - https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js
