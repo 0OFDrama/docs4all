@@ -21,3 +21,5 @@ $$
 $$
 
 普通最小二乘法（OLS）的系数估计依赖于特征（自变量）的独立性。当特征之间存在相关性，且设计矩阵（即特征矩阵）的列具有近似线性依赖关系时，设计矩阵会变得接近奇异（即行列式接近于零）。这种情况下，最小二乘估计对观察目标中的随机误差变得非常敏感，导致估计的方差很大。这种多重共线性的情况可能发生，例如，当数据是在没有实验设计的情况下收集的。
+
+$\lim_{n\rightarrow \infty} \sqrt[n]{a_n}=\exp \lim_{n\rightarrow \infty} \frac{\ln a_n}{n}\xlongequal{\mathbf{Stolz}}\exp \lim_{n\rightarrow \infty} \ln \frac{a_{n+1}}{a_n}=\lim_{n\rightarrow \infty} \frac{a_{n+1}}{a_n}.$
